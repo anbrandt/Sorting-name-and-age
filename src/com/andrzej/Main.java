@@ -1,0 +1,56 @@
+package com.andrzej;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Person person1 = new Person(33, "Tadeusz", "Kowalski");
+		Person person2 = new Person(44, "Henryk", "Batory");
+		Person person3 = new Person(44, "Jan", "Batory");
+		Person person4 = new Person(44, "Aaciek", "Lem");
+		Person person5 = new Person(888, "Tomasz", "Tomaszewski");
+		Person person6 = new Person(99, "Witold", "Macierewicz");
+
+		Person[] tableofPeople = {person1, person2, person3, person4, person5, person6};
+
+		System.out.println("Bubble Sorter");
+		System.out.println("--------------");
+		BubbleSorter bub1 = new BubbleSorter();
+		bub1.sortBubbleMethod(tableofPeople);
+
+		for (int i = 0; i < tableofPeople.length; i++) {
+			System.out.println("i = " + i + ", Age is " + tableofPeople[i].getAge() + " and his name is " + tableofPeople[i].getName());
+
+		}
+
+
+		System.out.println();
+		System.out.println("Selection Sorter");
+		System.out.println("------------------");
+
+		SelectionSorter sele1 = new SelectionSorter();
+		sele1.selecionSortMethod(tableofPeople);
+
+		for (int i = 0; i < tableofPeople.length; i++) {
+			System.out.println("i = " + i + ", Age is " + tableofPeople[i].getAge() + " and his name is " + tableofPeople[i].getName());
+
+		}
+
+		System.out.println();
+		System.out.println("Bubble Sorter with Comparable");
+		System.out.println("------------------");
+		BubbleSorter bub2 = new BubbleSorter();
+		bub2.sortBubbleUsingComparable(tableofPeople);
+
+		for (int i = 0; i < tableofPeople.length; i++) {
+			System.out.println("i = " + i + ", AGE " + tableofPeople[i].getAge() + " NAME " + tableofPeople[i].getName() +
+					" SURNAME: " + tableofPeople[i].getSurname());
+
+		}
+
+
+
+
+
+	}
+}
