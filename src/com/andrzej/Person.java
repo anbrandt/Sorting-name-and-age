@@ -36,11 +36,12 @@ public class Person implements Comparable<Person> {
 		if (this.getAge() > secondPerson.getAge()) {
 			return 1;
 		} else if (this.getAge() < secondPerson.getAge())
-			if (this.getSurname().compareTo(secondPerson.getSurname()) == 0){
-			return this.getName().compareTo(secondPerson.getName());
-		} else {
-			return this.getName().compareTo(secondPerson.getName());
-		} else
+			if (this.getSurname().compareTo(secondPerson.getSurname()) == 0) {
+				return this.getName().compareTo(secondPerson.getName());
+			} else {
+				return this.getName().compareTo(secondPerson.getName());
+			}
+		else
 			return -1;
 	}
 }
