@@ -32,7 +32,10 @@ public class BubbleSorter {
 
 		}
 		return peopleTable;
+
+
 	}
+
 
 	public Person[] sortBubbleUsingComparable(Person[] peopleTable) {
 		Person temp = new Person(0, "", "");

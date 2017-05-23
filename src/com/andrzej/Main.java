@@ -10,8 +10,9 @@ public class Main {
 		Person person4 = new Person(44, "Aaciek", "Lem");
 		Person person5 = new Person(888, "Tomasz", "Tomaszewski");
 		Person person6 = new Person(99, "Witold", "Macierewicz");
+		Person person7 = new Person(103, "Adam", "Mickiewicz");
 
-		Person[] tableofPeople = {person1, person2, person3, person4, person5, person6};
+		Person[] tableofPeople = {person1, person2, person3, person4, person5, person6, person7};
 
 		System.out.println("Bubble Sorter");
 		System.out.println("--------------");
@@ -49,8 +50,31 @@ public class Main {
 		}
 
 
+		bub1.sortBubbleUsingComparable(tableofPeople);
+		int middle = tableofPeople.length/2;
+
+		if (tableofPeople.length%2 == 1) {
+
+		}
 
 
 
+
+	}
+
+
+
+//method that prints the median from the table
+
+	public static Person[] getMedian(Person[] peoplePerson) {
+		if (peoplePerson.length % 2 == 0) {
+
+			System.out.println();
+		} else {
+
+		}
+
+
+		return peoplePerson;
 	}
 }
