@@ -5,14 +5,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		Person person1 = new Person(33, "Tadeusz", "Kowalski");
-		Person person2 = new Person(44, "Henryk", "Batory");
-		Person person3 = new Person(44, "Jan", "Batory");
+		Person person2 = new Person(45, "Henryk", "Batory");
+		Person person3 = new Person(42, "Jan", "Batory");
 		Person person4 = new Person(44, "Aaciek", "Lem");
-		Person person5 = new Person(888, "Tomasz", "Tomaszewski");
+		Person person5 = new Person(89, "Tomasz", "Tomaszewski");
 		Person person6 = new Person(99, "Witold", "Macierewicz");
 		Person person7 = new Person(103, "Adam", "Mickiewicz");
+		Person person8 = new Person(3, "Adam", "Miałczyński");
 
-		Person[] tableofPeople = {person1, person2, person3, person4, person5, person6, person7};
+		Person[] tableofPeople = {person1, person2, person3, person4, person5, person6, person7, person8};
 
 		System.out.println("Bubble Sorter");
 		System.out.println("--------------");
@@ -50,18 +51,21 @@ public class Main {
 		}
 
 
+
+
 		bub1.sortBubbleUsingComparable(tableofPeople);
 		int middle = tableofPeople.length/2;
 
 		if (tableofPeople.length%2 == 1) {
 
 		}
+		System.out.println();
+		System.out.println();
+		median medianMethod = new median();
 
-
-
+		System.out.println("Median for table is: " + medianMethod.median(tableofPeople));
 
 	}
-
 
 
 //method that prints the median from the table
